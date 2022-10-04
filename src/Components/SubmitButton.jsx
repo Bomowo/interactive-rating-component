@@ -6,7 +6,7 @@ function SubmitButton(props) {
   }
 
   return (
-    <button style={props.style} onClick={handleClick}>
+    <button className="submit-button" style={props.style} onClick={handleClick}>
       SUBMIT
     </button>
   );
