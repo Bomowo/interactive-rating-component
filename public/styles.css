@@ -25,6 +25,24 @@ p {
   width: 400px;
   line-height: 30px;
 }
+.card-submitted {
+  text-align: center;
+  background: radial-gradient(
+    ellipse at top,
+    hsla(215, 19%, 18%, 1),
+    hsla(212, 22%, 12%, 1)
+  );
+  background-color: hsl(213, 19%, 18%);
+  border-radius: 5%;
+  color: hsl(217, 12%, 63%);
+  font-family: "Overpass";
+  font-weight: 400;
+  margin: 20%;
+  padding: 5%;
+  height: 400px;
+  width: 400px;
+  line-height: 30px;
+}
 .submit-button {
   background-color: hsl(25, 97%, 53%);
   border-radius: 24px;
@@ -41,14 +59,47 @@ p {
   background-color: white;
   color: hsl(25, 97%, 53%);
 }
-.after-submission-alert{
-    border-radius: 24px;
-    padding: 4px;
-    margin:25px auto ;
-    width: 200px;
-    background-color: hsl(213, 19%, 18%);
-    color: hsl(25, 97%, 53%);
+.rating-button {
+  background-color: hsla(210, 19%, 18%, 1);
+  border-radius: 50%;
+  color: hsl(217, 12%, 63%);
+  font-family: "Overpass";
+  font-weight: 400;
+  height: 45px;
+  width: 45px;
+  margin: 16px 8px 32px;
+  border: none;
 }
-.ratings{
-    text-align: center;
+.rating-button:hover {
+  color: white;
+  background-color: hsl(217, 12%, 63%);
+}
+.rating-button:hover {
+  color: white;
+  background-color: hsl(217, 12%, 63%);
+}
+.rating-button:active {
+  background-color: hsl(25, 97%, 53%);
+  color: white;
+}
+.star-button {
+  background-color: hsla(210, 19%, 18%, 1);
+  height: 45px;
+  width: 45px;
+  pointer-events: none;
+  box-shadow: none;
+  border-radius: 50%;
+  border: none;
+}
+.after-submission-alert {
+  text-align: center;
+  border-radius: 24px;
+  padding: 4px;
+  margin: 25px auto;
+  width: 200px;
+  background-color: hsl(213, 19%, 18%);
+  color: hsl(25, 97%, 53%);
+}
+.ratings {
+  text-align: center;
 }

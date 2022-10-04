@@ -1,6 +1,5 @@
 import { ReactComponent as Star } from "../Icons/icon-star.svg";
 import { ReactComponent as Thanks } from "../Icons/illustration-thank-you.svg";
-import { Fab } from "@mui/material";
 import RatingButton from "./RatingButton";
 import SubmitButton from "./SubmitButton";
 import Text from "./Text";
@@ -25,20 +24,10 @@ function Card() {
   const hide = { display: "none" };
 
   return (
-    <div className="card">
-      <Fab
-        sx={{
-          backgroundColor: "hsla(210, 19%, 18%, 1)",
-          height: "45px",
-          width: "45px",
-          pointerEvents: "none",
-          boxShadow: "none",
-          textAlign: "left",
-        }}
-        style={submitted ? hide : null}
-      >
+    <div style={submitted ? {textAlign: "center"} : {}} className="card">
+      <button className="star-button" style={submitted ? hide : null}>
         <Star />
-      </Fab>
+      </button>
       <Thanks style={!submitted ? hide : null} />
       <p className="after-submission-alert" style={!submitted ? hide : null}>
         you selected {state} out of 5
